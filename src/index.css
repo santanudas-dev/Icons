@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme{
+    --font-geist: "Geist", sans-serif;
+}
+
+/* 1. Define colors for Light and Dark modes */
+:root {
+  --sb-track: transparent;
+  --sb-thumb: rgba(0, 0, 0, 0.15);
+  --sb-thumb-hover: rgba(0, 0, 0, 0.25);
+}
+
+:root.dark {
+  --sb-track: transparent;
+  --sb-thumb: rgba(255, 255, 255, 0.15);
+  --sb-thumb-hover: rgba(255, 255, 255, 0.25);
+}
+
+/* 2. Standard Properties (Firefox and modern browsers) */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--sb-thumb) var(--sb-track);
+}
+
+/* 3. WebKit Properties (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 14px; /* Vertical scrollbar width */
+  height: 14px; /* Horizontal scrollbar height */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sb-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb);
+  border-radius: 10px;
+  border: 4px solid transparent; /* Creates a clean padding effect */
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sb-thumb-hover);
+}
