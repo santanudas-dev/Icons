@@ -22,8 +22,8 @@ export default function Sidebar({ variant, setVariant, weight, setWeight, open }
       `}
     >
       <div className="p-6 border-b border-black/5 dark:border-[hsla(0,0%,100%,.05)]">
-        <h2 className="text-lg text-black dark:text-white font-bold tracking-tight">Icon Finder</h2>
-        <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">60,000+ icons optimized</p>
+       <img src="/logo.png" alt="logo" className='h-10' />
+        <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">7000+ San Web  icons</p>
       </div>
 
       <div className="p-6 flex-1 overflow-y-auto">

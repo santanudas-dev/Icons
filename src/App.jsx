@@ -184,7 +184,7 @@ const App = () => {
             <div className="w-full h-full flex flex-col items-center justify-center text-gray-400 gap-4">
               <div className="w-8 h-8 border-2 border-[#007aff] border-t-transparent rounded-full animate-spin"></div>
               <p className="text-xs tracking-wider uppercase opacity-80">
-                Loading 60,000+ icons...
+                Loading 7000+ icons...
               </p>
             </div>
           ) : (
